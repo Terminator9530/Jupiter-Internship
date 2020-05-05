@@ -6,8 +6,14 @@ import Label from './content/Label';
 import TextField from './content/TextField';
 import PrimarySearchAppBar from './nav/AppBar';
 import Toggler from './content/Toggle';
+import AppBar from "./nav/AppBar";
+import Drawer from "./drawer/Drawer";
 
 ReactDOM.render(
-  <Toggler />,
+  <AppBar />,
+  document.getElementById('nav')
+);
+ReactDOM.render(
+  <Drawer />,
   document.getElementById('drawer')
 );
