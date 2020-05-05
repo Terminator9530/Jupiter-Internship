@@ -14,8 +14,8 @@ function Drawer(){
             <div className="tasks"  style={{'textAlign':'center'}}>
                 <Buttons text="My Tasks" color="secondary" class="menu" />
                 <div style={{'height':'0px','overflow':'hidden'}}>
-                    <Buttons text="Task1" color="primary" class="menu submenu" />
-                    <Buttons text="Task2" color="primary" class="menu submenu" />
+                    <Buttons text="Task1" color="primary" class="menu submenu" value="task1" />
+                    <Buttons text="Task2" color="primary" class="menu submenu" value="task2" />
                 </div>
             </div>
         </div>

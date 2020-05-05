@@ -3,14 +3,14 @@ import {MuiPickersUtilsProvider,KeyboardDatePicker} from '@material-ui/pickers';
 import DateFnsUtils from '@date-io/date-fns';
 
 function DatePicker(){
-    const [selectedDate, setSelectedDate] = React.useState(new Date('2014-08-18T21:11:54'));
+    const [selectedDate, setSelectedDate] = React.useState(new Date());
     const handleDateChange = (date) => {
         setSelectedDate(date);
       };
     return (
         <MuiPickersUtilsProvider utils={DateFnsUtils}>
             <KeyboardDatePicker
-                className="textField"
+                className="dateField"
                 margin="normal"
                 id="date-picker-dialog"
                 label="Date picker dialog"
