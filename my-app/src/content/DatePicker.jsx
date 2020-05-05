@@ -10,6 +10,7 @@ function DatePicker(){
     return (
         <MuiPickersUtilsProvider utils={DateFnsUtils}>
             <KeyboardDatePicker
+                className="textField"
                 margin="normal"
                 id="date-picker-dialog"
                 label="Date picker dialog"

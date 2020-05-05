@@ -11,6 +11,7 @@ function TextField(){
     return(
         <FormControl variant="outlined">
           <OutlinedInput
+            className="textField"
             id="outlined-adornment-weight"
             value={val}
             onChange={changeText}

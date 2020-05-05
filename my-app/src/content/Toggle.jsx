@@ -3,8 +3,12 @@ import React from 'react';
 function Toggler(){
     return (
         <span>
-            <input class="tgl tgl-ios" id="cb2" type="checkbox"/>
-            <label class="tgl-btn" for="cb2"></label>
+            <div class="pretty p-switch p-fill">
+                <input type="checkbox" />
+                <div class="state p-primary">
+                    <label></label>
+                </div>
+            </div>
         </span>
     );
 }
