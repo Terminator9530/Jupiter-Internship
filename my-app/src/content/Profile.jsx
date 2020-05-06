@@ -14,7 +14,7 @@ function Profile(){
                 <Label class="col-xl-2 col-md-12 col-12" text="Name" />
                 <TextField id="Name" class="col-xl-8 col-md-12 col-12" /><br />
                 <Label class="col-xl-2 col-md-12 col-12" text="DOB" />
-                <DatePicker id="DOB" class="col-xl-8 col-md-12 col-12" /><br />
+                <DatePicker name="DOB" class="col-xl-8 col-md-12 col-12" /><br />
                 <Label class="col-xl-2 col-md-12 col-12" text="Profession" />
                 <TextField id="Profession" class="col-xl-8 col-md-12 col-12" /><br />
                 <Label class="col-xl-2 col-md-12 col-12" text="Designation" />
