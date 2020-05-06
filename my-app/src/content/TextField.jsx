@@ -13,14 +13,14 @@ function TextField(props){
     }
 
     function changeText(event){
-      if(event.target.value!=""){
+      if(event.target.value.trim()!=""){
           err=false;
           errText="";
-          if(event.target.value.length>30){
+          if(event.target.value.trim().length>30){
             err=true;
             errText="Length Should not be greater than 30";
           } else {
-            if(!validate(event.target.value)){
+            if(!validate(event.target.value.trim())){
               err=true;
               errText="Contains only text";
             }
@@ -29,7 +29,7 @@ function TextField(props){
         err=true;
         errText="Should Not Be Empty";
       }
-        setVal({err:err,errText:errText,val:event.target.value});
+        setVal({err:err,errText:errText,val:event.target.value.trim()});
     }
     const a="textField "+props.class;
     return(

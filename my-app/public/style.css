@@ -34,6 +34,7 @@
     height: 677px !important;
     background-color: #272a2e;
     height: 100%;
+    padding-right: 0;
 }
 
 .menu {
@@ -44,6 +45,7 @@
 .submenu {
     position: relative;
     left: 20px;
+    width:70%;
 }
 
 .slide {
