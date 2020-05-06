@@ -8,25 +8,25 @@ import Task2 from "../content/Task2";
 
 function Buttons(props){
     function changePage(){
-        if(props.value=="setting"){
+        if(props.value==="setting"){
             ReactDOM.render(
                 <Profile />,
                 document.getElementById('content')
             );
         }
-        else if(props.value=="notification"){
+        else if(props.value==="notification"){
             ReactDOM.render(
                 <Notification />,
                 document.getElementById('content')
             );
         }
-        else if(props.value=="task1"){
+        else if(props.value==="task1"){
             ReactDOM.render(
                 <Task1 />,
                 document.getElementById('content')
             );
         }
-        else if(props.value=="task2"){
+        else if(props.value==="task2"){
             ReactDOM.render(
                 <Task2 />,
                 document.getElementById('content')

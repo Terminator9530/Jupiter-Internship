@@ -8,7 +8,7 @@ function Task2(){
     return(
         <Zoom in={true}>
             <div style={{'margin':'50px auto','width':'60%','height':'auto'}}>
-            <center><Label text="Task_2" style={{'margin':'0'}} /></center>
+            <center><Label text="Task_2" style={{'margin':'0'}} />
             <form style={{'padding':'10px','height':'auto','display':'block','margin':'50px 0','border':'1px solid black'}}>
                 <Label class="col-xl-3 col-12" text="Source Name" />
                 <DropDown class="col-xl-7 col-12" /><br />
@@ -16,7 +16,7 @@ function Task2(){
                 <div class="pretty p-svg p-plain col-xl-7 col-12" style={{'margin-top': '20px'}}>
                     <input type="checkbox" />
                     <div class="state">
-                        <img class="svg" src="../../task.svg" />
+                        <img class="svg" src="../../task.svg" alt="" />
                         <label></label>
                     </div>
                 </div><br />
@@ -28,6 +28,7 @@ function Task2(){
                 <Button text="Submit" style={{'backgroundColor':'#47c20a','color':'white','margin':'30px 20px 0px 20px'}} />
                 <Button text="Validate" color="primary" style={{'margin':'30px 20px 0px 20px'}} />
             </form>
+            </center>
         </div>
         </Zoom>
     );

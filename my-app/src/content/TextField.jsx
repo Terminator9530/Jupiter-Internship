@@ -13,7 +13,7 @@ function TextField(props){
     }
 
     function changeText(event){
-      if(event.target.value.trim()!=""){
+      if(event.target.value.trim()!==""){
           err=false;
           errText="";
           if(event.target.value.trim().length>30){
@@ -31,19 +31,12 @@ function TextField(props){
       }
         setVal({err:err,errText:errText,val:event.target.value.trim()});
     }
-    const a="textField "+props.class;
+    const a="textField "+props.class+" form-control";
     return(
-        <FormControl variant="outlined" error={val.err}>
-          <OutlinedInput
-            className={a}
-            name={props.name}
-            value={val.val}
-            onChange={changeText}
-            aria-describedby="outlined-weight-helper-text"
-            labelWidth={0}
-          />
-          <FormHelperText id="outlined-weight-helper-text">{val.err?val.errText:""}</FormHelperText>
-        </FormControl>
+      <span class="form-group">
+          <input name={props.name} type="text" value={val.val} onChange={changeText} className={a} />
+          <small class="form-text" style={{"color":"red"}}>{val.err?val.errText:""}</small>
+      </span>
     );
 }
 

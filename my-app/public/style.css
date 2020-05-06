@@ -10,12 +10,16 @@
 }
 
 .textField {
-    margin-top: 20px;
+    margin-top: 20px!important;
     height:44px;
 }
 .dateField {
     margin-top: 20px!important;
     height:44px;
+}
+
+.form-control{
+    display: inline!important;
 }
 
 .flex-container {
@@ -35,6 +39,10 @@
     background-color: #272a2e;
     height: 100%;
     padding-right: 0;
+}
+
+.pretty{
+    margin-right:0!important;
 }
 
 .menu {
