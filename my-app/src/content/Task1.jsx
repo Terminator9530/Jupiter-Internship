@@ -8,7 +8,7 @@ function Task1(){
     return(
         <Zoom in={true}>
             <div style={{'margin':'50px auto','width':'60%','height':'auto'}}>
-            <center><Label text="Task_1" style={{'margin':'0'}} />
+            <center><Label text="Tasks_1" style={{'margin':'0'}} />
             <form style={{'padding':'10px','height':'auto','display':'block','margin':'50px 0','border':'1px solid black'}} className="polaroid">
                 <Label class="col-xl-3 col-12" text="Source Name" />
                 <DropDown class="col-xl-7 col-12" /><br />

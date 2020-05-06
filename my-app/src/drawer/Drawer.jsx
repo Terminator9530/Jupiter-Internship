@@ -7,8 +7,8 @@ function Drawer(){
             <div className="profile" style={{'textAlign':'center'}}>
                 <Buttons text="Profile" color="secondary" class="menu" />
                 <div style={{'height':'0px','overflow':'hidden'}}>
-                    <Buttons text="Setting" color="primary" class="menu submenu" value="setting" />
-                    <Buttons text="Notifications" color="primary" class="menu submenu" value="notification" />
+                    <Buttons text="Settings" color="primary" class="menu submenu" value="setting" />
+                    <Buttons text="Notification" color="primary" class="menu submenu" value="notification" />
                 </div>
             </div>
             <div className="tasks"  style={{'textAlign':'center'}}>

@@ -4,7 +4,7 @@ import AppBar from "./nav/AppBar";
 import Drawer from "./drawer/Drawer";
 
 ReactDOM.render(
-  <AppBar />,
+  <AppBar name="User" />,
   document.getElementById('nav')
 );
 ReactDOM.render(
