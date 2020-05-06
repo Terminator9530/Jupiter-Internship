@@ -31,15 +31,19 @@
       document.querySelector(".profile button").onclick=function(){
         if($(".profile div").hasClass("slide")){
           $(".profile div").removeClass('slide');
+          $(".profile div").addClass('rslide');
         } else {
           $(".profile div").addClass('slide');
+          $(".profile div").removeClass('rslide');
         }
       }
       document.querySelector(".tasks button").onclick=function(){
         if($(".tasks div").hasClass("slide")){
           $(".tasks div").removeClass('slide');
+          $(".tasks div").addClass('rslide');
         } else {
           $(".tasks div").addClass('slide');
+          $(".tasks div").removeClass('rslide');
         }
       }
       var setting=document.getElementById("setting");

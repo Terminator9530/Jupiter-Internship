@@ -57,8 +57,10 @@
 }
 
 .slide {
-    overflow: hidden;
-    animation: slide 0.5s forwards linear;
+    animation: slide 0.2s forwards ease-out;
+}
+.rslide {
+    animation: slide 0.2s forwards ease-in reverse;
 }
 
 @keyframes slide {
