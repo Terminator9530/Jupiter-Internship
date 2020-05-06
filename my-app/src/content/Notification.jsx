@@ -6,7 +6,7 @@ import DatePicker from "./DatePicker";
 
 function Notification(){
     return(
-        <div style={{'margin':'50px auto','width':'40%','height':'auto'}}>
+        <div style={{'margin':'50px auto','width':'60%','height':'auto'}}>
             <center><Label text="Notifications" style={{'margin':'0'}} /></center>
             <form style={{'padding':'10px','height':'auto','display':'block','margin':'50px 0','border':'1px solid black'}}>
                 <Label class="col-xl-6 col-md-8 col-12" text="Send all alerts" />

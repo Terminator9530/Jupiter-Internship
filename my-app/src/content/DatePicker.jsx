@@ -14,7 +14,7 @@ function DatePicker(props){
                 className={a}
                 id="date-picker-dialog"
                 label="Date picker dialog"
-                format="dd/MM/yyyy"
+                format="yyyy/MM/dd"
                 value={selectedDate}
                 onChange={handleDateChange}
                 KeyboardButtonProps={{
