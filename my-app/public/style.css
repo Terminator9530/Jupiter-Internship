@@ -14,7 +14,7 @@
     height:44px;
 }
 .dateField {
-    margin-top: 20px;
+    margin-top: 20px!important;
     height:44px;
 }
 
@@ -35,8 +35,8 @@
     height: 100%;
 }
 
-.col-2,
-.col-10 {
+.col-xl-2,
+.col-xl-10,.col-8, .col-md-9,.col-4, .col-md-3 {
     padding-left: 0 !important;
     padding-right: 0 !important;
     height: 677px !important;

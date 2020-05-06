@@ -34,6 +34,8 @@ function DropDown(props) {
           <MenuItem value={10}>Sample1</MenuItem>
           <MenuItem value={20}>Sample2</MenuItem>
           <MenuItem value={30}>Sample3</MenuItem>
+          <MenuItem value={40}>Sample4</MenuItem>
+          <MenuItem value={50}>Sample5</MenuItem>
         </Select>
       </FormControl>
   );

@@ -2,10 +2,12 @@ import React from "react";
 import Button from "./Button";
 import Label from "./Label";
 import DropDown from "./DropDown";
+import Zoom from '@material-ui/core/Zoom';
 
 function Task2(){
     return(
-        <div style={{'margin':'50px auto','width':'60%','height':'auto'}}>
+        <Zoom in={true}>
+            <div style={{'margin':'50px auto','width':'60%','height':'auto'}}>
             <center><Label text="Task_2" style={{'margin':'0'}} /></center>
             <form style={{'padding':'10px','height':'auto','display':'block','margin':'50px 0','border':'1px solid black'}}>
                 <Label class="col-xl-3 col-12" text="Source Name" />
@@ -27,6 +29,7 @@ function Task2(){
                 <Button text="Validate" color="primary" style={{'margin':'30px 20px 0px 20px'}} />
             </form>
         </div>
+        </Zoom>
     );
 }
 
