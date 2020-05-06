@@ -32,7 +32,7 @@ function TextField(props){
     const a="textField "+props.class+" form-control";
     return(
       <span className="form-group">
-          <input name={props.name} type="text" value={val.val} onChange={changeText} className={a} autoComplete="off" />
+          <input id={props.id} type="text" value={val.val} onChange={changeText} className={a} autoComplete="off" />
           <small className="form-text" style={{"color":"red"}}>{val.err?val.errText:""}</small>
       </span>
     );

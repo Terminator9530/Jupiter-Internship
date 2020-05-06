@@ -34,7 +34,7 @@ function Buttons(props){
         }
     }
     return (
-        <Button id={props.value} value={props.value} onClick={changePage} className={props.class?props.class:""} variant="contained" color={props.color?props.color:'primary'} style={props.style}>
+        <Button id={props.id?props.id:props.value} value={props.value?props.value:""} onClick={changePage} className={props.class?props.class:""} variant="contained" color={props.color?props.color:'primary'} style={props.style}>
             {props.text}
         </Button>
     );

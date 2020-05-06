@@ -12,9 +12,9 @@ function DatePicker(props){
         <MuiPickersUtilsProvider utils={DateFnsUtils}>
             <KeyboardDatePicker
                 className={a}
-                id="date-picker-dialog"
                 label="Date picker dialog"
                 format="yyyy/MM/dd"
+                id={props.DOB}
                 value={selectedDate}
                 onChange={handleDateChange}
                 KeyboardButtonProps={{
