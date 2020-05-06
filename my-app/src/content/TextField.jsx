@@ -1,7 +1,4 @@
 import React from 'react';
-import FormControl from '@material-ui/core/FormControl';
-import OutlinedInput from '@material-ui/core/OutlinedInput';
-import FormHelperText from '@material-ui/core/FormHelperText';
 
 function TextField(props){
     const [val,setVal]=React.useState({err:true,errText:"Should Not Be Empty",val:""});
@@ -13,14 +10,15 @@ function TextField(props){
     }
 
     function changeText(event){
-      if(event.target.value.trim()!==""){
+      var inputVal=event.target.value.trimLeft().replace(/\s\s+/g, ' ');
+      if(inputVal!==""){
           err=false;
           errText="";
-          if(event.target.value.trim().length>30){
+          if(inputVal.length>30){
             err=true;
             errText="Length Should not be greater than 30";
           } else {
-            if(!validate(event.target.value.trim())){
+            if(!validate(inputVal)){
               err=true;
               errText="Contains only text";
             }
@@ -29,13 +27,13 @@ function TextField(props){
         err=true;
         errText="Should Not Be Empty";
       }
-        setVal({err:err,errText:errText,val:event.target.value.trim()});
+        setVal({err:err,errText:errText,val:inputVal});
     }
     const a="textField "+props.class+" form-control";
     return(
-      <span class="form-group">
-          <input name={props.name} type="text" value={val.val} onChange={changeText} className={a} />
-          <small class="form-text" style={{"color":"red"}}>{val.err?val.errText:""}</small>
+      <span className="form-group">
+          <input name={props.name} type="text" value={val.val} onChange={changeText} className={a} autoComplete="off" />
+          <small className="form-text" style={{"color":"red"}}>{val.err?val.errText:""}</small>
       </span>
     );
 }

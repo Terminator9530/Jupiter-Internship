@@ -42,6 +42,34 @@
           $(".tasks div").addClass('slide');
         }
       }
+      var setting=document.getElementById("setting");
+      var notification=document.getElementById("notification");
+      var task1=document.getElementById("task1");
+      var task2=document.getElementById("task2");
+      setting.onclick=function(){
+        setting.style.backgroundColor="#bff207";
+        notification.style.backgroundColor="#3f51b5";
+        task1.style.backgroundColor="#3f51b5";
+        task2.style.backgroundColor="#3f51b5";
+      }
+      notification.onclick=function(){
+        setting.style.backgroundColor="#3f51b5";
+        notification.style.backgroundColor="#bff207";
+        task1.style.backgroundColor="#3f51b5";
+        task2.style.backgroundColor="#3f51b5";
+      }
+      task1.onclick=function(){
+        setting.style.backgroundColor="#3f51b5";
+        notification.style.backgroundColor="#3f51b5";
+        task1.style.backgroundColor="#bff207";
+        task2.style.backgroundColor="#3f51b5";
+      }
+      task2.onclick=function(){
+        setting.style.backgroundColor="#3f51b5";
+        notification.style.backgroundColor="#3f51b5";
+        task1.style.backgroundColor="#3f51b5";
+        task2.style.backgroundColor="#bff207";
+      }
     });
   </script>
 </body>
