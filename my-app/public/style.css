@@ -31,15 +31,9 @@
 }
 
 #drawer {
+    height: 677px !important;
     background-color: #272a2e;
     height: 100%;
-}
-
-.col-xl-2,
-.col-xl-10,.col-8, .col-md-9,.col-4, .col-md-3 {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-    height: 677px !important;
 }
 
 .menu {
