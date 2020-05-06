@@ -1,8 +1,10 @@
 import React from "react";
 
 function Label(props){
+    console.log(props.class);
+    const a="label "+props.class;
     return (
-        <span className="label" style={props.style}>
+        <span style={props.style} className={a}>
             <span>{props.text}</span>
         </span>
     );

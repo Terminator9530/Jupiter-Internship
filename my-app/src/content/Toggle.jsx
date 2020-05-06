@@ -1,8 +1,8 @@
 import React from 'react';
 
-function Toggler(){
+function Toggler(props){
     return (
-        <span>
+        <span className={props.class}>
             <div class="pretty p-switch p-fill">
                 <input type="checkbox" />
                 <div class="state p-primary">

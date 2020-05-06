@@ -10,7 +10,7 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
-function DropDown() {
+function DropDown(props) {
   const classes = useStyles();
   const [age, setAge] = React.useState('');
 
@@ -18,8 +18,10 @@ function DropDown() {
     setAge(event.target.value);
   };
 
+  const a=classes.formControl+" "+props.class;
+
   return (
-      <FormControl className={classes.formControl}>
+      <FormControl className={a}>
         <Select
           value={age}
           onChange={handleChange}
