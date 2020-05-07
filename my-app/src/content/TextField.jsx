@@ -1,5 +1,4 @@
 import React from 'react';
-
 function TextField(props){
     const [val,setVal]=React.useState({err:true,errText:"Should Not Be Empty",val:""});
     var err,errText;

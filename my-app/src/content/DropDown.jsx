@@ -23,6 +23,7 @@ function DropDown(props) {
   return (
       <FormControl className={a}>
         <Select
+          id={props.id}
           value={age}
           onChange={handleChange}
           displayEmpty
