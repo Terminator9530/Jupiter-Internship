@@ -1,0 +1,6 @@
+Please proceed as follows : 
+
+1. You must have node js installed on computer if not then download it from https://nodejs.org/en/
+2. Open my-app folder and then open terminal there and run command 'npm i' then it will download all the dependencies
+3. Now type command 'npm start' to run the project and then browser is opened and you can now see the project
+4. At last to see project only click link https://practical-bardeen-989d95.netlify.app/
